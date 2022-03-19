@@ -56,7 +56,8 @@ export const Dashboard: React.FC = () => {
       setRepos(filteredRepoArray);
       formEl.current?.reset();
       setNewRepo('');
-    } catch (err) {
+      setInputError('');
+    } catch {
       setInputError('Repositório privado ou inexistente');
     }
   }
